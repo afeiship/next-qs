@@ -11,7 +11,7 @@
     var query = inUrl == null ? LOCATION.search.substring(1) : inUrl.substring(inUrl.indexOf('?') + 1);
     var params = query.split(CHAR_AND);
     var arr, pair, key, value;
-    nx.each(params, function (_, param) {
+    params.forEach(function(param) {
       pair = param.split(CHAR_EQUAL);
       key = pair[0];
       value = pair[1];
@@ -29,6 +29,7 @@
         }
       }
     });
+
     return result;
   };
 
