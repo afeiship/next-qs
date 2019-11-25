@@ -1,14 +1,22 @@
-(function () {
+/*!
+ * name: @feizheng/next-hashlize
+ * url: https://github.com/afeiship/next-hashlize
+ * version: 1.0.0
+ * date: 2019-11-25T08:15:14.870Z
+ * license: MIT
+ */
 
-  var global = global || this || self || window;
-  var nx = global.nx || require('next-js-core2');
+(function() {
+  var global = global || this || window || Function('return this')();
+  var nx = global.nx || require('@feizheng/next-js-core2');
   var LOCATION = global.location;
   var CHAR_AND = '&';
   var CHAR_EQUAL = '=';
 
-  nx.hashlize = function (inUrl) {
+  nx.hashlize = function(inUrl) {
     var result = {};
-    var query = inUrl == null ? LOCATION.search.substring(1) : inUrl.substring(inUrl.indexOf('?') + 1);
+    var query =
+      inUrl == null ? LOCATION.search.substring(1) : inUrl.substring(inUrl.indexOf('?') + 1);
     var params = query.split(CHAR_AND);
     var arr, pair, key, value;
     params.forEach(function(param) {
@@ -33,9 +41,9 @@
     return result;
   };
 
-
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = nx.hashlize;
   }
+})();
 
-}());
+//# sourceMappingURL=next-hashlize.js.map

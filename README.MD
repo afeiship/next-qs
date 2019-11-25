@@ -1,8 +1,14 @@
 # next-hashlize
 > Hashlize for url based on next.
 
+## installation
+```bash
+npm install -S @feizheng/next-hashlize
+```
 
-## resources:
+## usage
+```js
+import '@feizheng/next-hashlize';
 
-## todos:
-- [ ] unit test case
+//DOCS here!
+```
