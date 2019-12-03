@@ -6,3 +6,12 @@ test
 src
 build
 gulpfile.js
+
+
+.editorconfig
+.prettierrc
+bower.json
+express.js
+Gemfile
+jest.config.js
+Rakefile
