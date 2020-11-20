@@ -3,7 +3,7 @@
  * description: Hashlize for url based on next.
  * homepage: https://github.com/afeiship/next-hashlize
  * version: 1.0.0
- * date: 2020-11-20 22:47:38
+ * date: 2020-11-20 22:49:10
  * license: MIT
  */
 
