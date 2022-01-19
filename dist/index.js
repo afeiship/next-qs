@@ -1,9 +1,9 @@
 /*!
- * name: @jswork/next-hashlize
- * description: Hashlize for url based on next.
- * homepage: https://github.com/afeiship/next-hashlize
+ * name: @jswork/next-qs
+ * description: Querystring for url based on next.
+ * homepage: https://js.work
  * version: 1.0.0
- * date: 2020-11-20 22:49:10
+ * date: 2022-01-19 11:02:29
  * license: MIT
  */
 
@@ -14,7 +14,7 @@
   var CHAR_AND = '&';
   var CHAR_EQUAL = '=';
 
-  nx.hashlize = function (inUrl) {
+  nx.qs = function (inUrl) {
     var result = {};
     var query =
       inUrl == null ? LOCATION.search.substring(1) : inUrl.substring(inUrl.indexOf('?') + 1);

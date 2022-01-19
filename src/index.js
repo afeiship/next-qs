@@ -5,7 +5,7 @@
   var CHAR_AND = '&';
   var CHAR_EQUAL = '=';
 
-  nx.hashlize = function (inUrl) {
+  nx.qs = function (inUrl) {
     var result = {};
     var query =
       inUrl == null ? LOCATION.search.substring(1) : inUrl.substring(inUrl.indexOf('?') + 1);
