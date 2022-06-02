@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-qs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Querystring for url based on next.",
   "homepage": "https://js.work",
   "author": {
@@ -32,7 +32,7 @@
     "gulp-uglify": "^3.0.2",
     "jest": "^26.6.3",
     "prettier": "^2.2.1",
-    "release-it": "^14.2.2",
+    "release-it": "^14.14.3",
     "uglify-js": "3.12.4",
     "uglify-save-license": "^0.4.1"
   },
@@ -44,5 +44,12 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/afeiship/boilerplate-next-package.git"
-  }
+  },
+  "keywords": [
+    "hashlize",
+    "querystring",
+    "next",
+    "qs",
+    "param"
+  ]
 }

@@ -16,16 +16,17 @@
       key = pair[0];
       value = pair[1];
       if (value) {
+        var _value = decodeURIComponent(value);
         switch (typeof result[key]) {
           case 'undefined':
-            result[key] = decodeURIComponent(value);
+            result[key] = _value;
             break;
           case 'string':
-            arr = [result[key], decodeURIComponent(value)];
+            arr = [result[key], _value];
             result[key] = arr;
             break;
           default:
-            result[key].push(decodeURIComponent(value));
+            result[key].push(_value);
         }
       }
     });
