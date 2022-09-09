@@ -35,6 +35,6 @@
   };
 
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = nx.hashlize;
+    module.exports = nx.qs;
   }
 })();
