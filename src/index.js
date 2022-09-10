@@ -9,6 +9,7 @@
     var result = {};
     var query =
       inUrl == null ? LOCATION.search.substring(1) : inUrl.substring(inUrl.indexOf('?') + 1);
+
     var params = query.split(CHAR_AND);
     var arr, pair, key, value;
     params.forEach(function (param) {
