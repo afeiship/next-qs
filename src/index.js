@@ -1,14 +1,13 @@
 (function () {
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('@jswork/next');
-  var LOCATION = global.location;
   var CHAR_AND = '&';
   var CHAR_EQUAL = '=';
 
   nx.qs = function (inUrl) {
     var result = {};
     var query =
-      inUrl == null ? LOCATION.search.substring(1) : inUrl.substring(inUrl.indexOf('?') + 1);
+      inUrl == null ? location.search.substring(1) : inUrl.substring(inUrl.indexOf('?') + 1);
 
     var params = query.split(CHAR_AND);
     var arr, pair, key, value;
