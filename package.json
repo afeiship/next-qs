@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-qs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Querystring for url based on next.",
   "homepage": "https://js.work",
   "author": {
@@ -45,5 +45,12 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "keywords": [
+    "hashlize",
+    "querystring",
+    "next",
+    "qs",
+    "param"
+  ]
 }
