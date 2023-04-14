@@ -1,15 +1,15 @@
-var global = global || this || window || Function('return this')();
-var nx = global.nx || require('@jswork/next');
-var CHAR_AND = '&';
-var CHAR_EQUAL = '=';
+import nx from '@jswork/next';
+
+const CHAR_AND = '&';
+const CHAR_EQUAL = '=';
 
 nx.qs = function (inUrl) {
-  var result = {};
-  var query =
+  const result = {};
+  const query =
     inUrl == null ? location.search.substring(1) : inUrl.substring(inUrl.indexOf('?') + 1);
 
-  var params = query.split(CHAR_AND);
-  var arr, pair, key, value;
+  const params = query.split(CHAR_AND);
+  let arr, pair, key, value;
   params.forEach(function (param) {
     pair = param.split(CHAR_EQUAL);
     key = pair[0];
@@ -36,3 +36,5 @@ nx.qs = function (inUrl) {
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = nx.qs;
 }
+
+export default nx.qs;

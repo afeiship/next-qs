@@ -4,7 +4,8 @@ module.exports = {
   testRegex: [/\.spec.js/],
   //preset: "jest-puppeteer",
   automock: false,
-  setupFilesAfterEnv: ['./jest.setup.js'],
+  setupFilesAfterEnv: ['./jest-setup.js'],
+  testEnvironment: "jsdom",
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1'
   }
