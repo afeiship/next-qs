@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-qs",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Querystring for url based on next.",
   "homepage": "https://js.work",
   "author": {
